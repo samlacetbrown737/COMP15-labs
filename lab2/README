@@ -1,0 +1,91 @@
+/*
+ * Comp 15 Lab 2: Planets
+ *
+ * README
+ * Author: Hayden Wolff, edited by Elizabeth Hom (Sept 2020)
+ * 
+ * Name: Sam Lacet-Brown
+ * Date: 9/22/20
+ */
+
+PROGRAM PURPOSE:
+---------------
+    This lab assignment covers and offers Comp 15 students with hands on
+    practice with linked lists. Specifically, this program implements a linked
+    list of planets.
+
+ACKNOWLEDGEMENTS:
+----------------
+    I reviewed my Java code on DoublyLinkedLists as a refresher, and talked
+    to one of the TAs during the breakout room portion of the lab.
+
+FILES:
+-----
+
+    planet-driver.cpp: Main driver for the linked list of planets.
+        Inserts planets read in through cin and prints planets in default
+        backwards order.
+          ** STUDENT TODO: Create a second linked list, write and call the
+        reverse function, and print. Student should write the reverse_list
+        helper function in this file which takes two linked lists: the
+        elements of the first linked list should be inserted in reverse
+        order into the second linked list.
+
+    LinkedList.cpp: Implementation of the LinkedList class which includes
+        key functions regarding the linked list, such as the default and
+        parametrized constructor, assignment operator, insert function, 
+        print function, and other helper functions.
+          ** STUDENT TODO: Write insert_planet_at_back, which adds a planet
+          at the end of the linked list.
+
+    LinkedList.h: Interface of LinkedList class, which includes key information
+        regarding the LinkedList class.
+
+    Planet.cpp: Implementation of Planet class which includes a default and
+        parametrized constructor which creates Planet objects, a print
+        function, and assignment operator.
+
+    Planet.h: Interface of Planet class, which includes key information
+        regarding Planet objects.
+
+
+HOW TO COMPILE/LINK/RUN:
+-----------------------
+    * Compile with "make planet-driver"
+    * Run with "./planet-driver"
+
+    * Note: The student must implement two functions: insert_planet_at_back
+            and reverse_list.
+
+DATA STRUCTURES:
+---------------
+
+    The main data structure of this lab is a singly linked list. Inserting
+    at the front of a linked list is O(1). Inserting at the back is
+    O(list_length) (or O(1) if there is a back pointer). Access is O(n),
+    because the worst case run time is if the element that is being looked
+    for is the last element in the list.  A linked list is useful because it
+    can be used dynamically and it is relatively easy to insert and delete
+    nodes. A disadvantage of linked lists is that it is difficult to access
+    elements quickly, as you cannot directly access elements like with an array
+    and must traverse the list to access elements.
+    ** This section of your README should be quite thorough for homeworks!
+
+TESTING:
+-------
+    Within this lab, I used the included driver program to test my code
+    and found it to be functional both in reversing the first list and in
+    inserting elements at the back.
+    I did however notice that when I ran Valgrind, there was some lost memory
+    and this seems to be due  to that lack of a deconstructor.
+    As we are not supposed to add public functions, I left this alone
+    and assumed is expected behavior for this lab.
+
+
+NOTE: As stated earlier, this lab comes partially implemented. The
+Planet class is already written and the majority of the Linked List
+class is also written. The driver also already is mostly implemented,
+but students must write and utilize a reverse_list function which
+should take the original list and insert its elements into a second
+list. Students must also modify the LinkedList class by writing a
+function to insert planets at the back of the linked list.

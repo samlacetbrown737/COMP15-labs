@@ -1,0 +1,19 @@
+Results of various timed tests.
+You can make more rows and columns.  Don't worry about the 80 column rule.
+Each row contains results for a particular algorithm.
+Each colum contains results for a test of the given size and type.
+Types of data are:  ran (random),    inc (increasing),
+                    dec (decreasing),rep (repeating)
+And others that you might care to develop.  Describe them here.
+
+Input
+size/type =>  | 0/-        | 1/-          | 2/ran        | 5000/ran
+--------------+-----+-----+-------+-------------------------------------------
+SelectionAux  |     |     |       |
+SelectionPlace|     |     |       |
+InsertionAux  |     |     |       |
+InsertionPlace| 0.000622    | 0.000634    | 0.002150      | 1.640802
+Mergesort     |     |     |       |
+Quicksort     |     |     |       |
+
+If you feel so inclined, you can plot the numbers!

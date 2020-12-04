@@ -1,0 +1,27 @@
+* Comp 15 lab 0: scavenger hunt
+* Fall 2020
+* Sam Lacet-Brown
+* 9/8/20
+* Lab 0
+
+* Answers to the scavenger hunt questions!
+1 - The course administration page
+2 - Only when documented
+3 - Only when documented
+4 - No
+5 - Never
+6 - Have a plan, diagram your data structures, outline your algorthims
+7 - Re-read the comments, then request it through Gradescope
+8 - Two weeks
+9 - Tokens, 24 hours, 2, no
+10 - Whenever you start struggling
+
+1 - Name, date, assignment, documentation
+2 - Parameter, return value, side effects, error conditions, memory allocation requirements
+3 - Tricky bits or non-obvious assumptions
+4 - While testing
+5 - The readme file
+6 - Auto, temp, break, continue, global vars
+7 - 4+ spaces
+8 - Global constants
+9 - Test your code, follow all instructions, and document your process

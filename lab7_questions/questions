@@ -1,0 +1,128 @@
+Comp 15 Midterm review general questions. This does not cover all content on the midterm,
+but goes over some questions that are important to understand.
+
+By Ellis Brown, 10/27/2020
+
+DONE
+1) Describe the benefits and negatives of using the following data structures, and one time you would use them
+
+    a) Linked list
+    Can't access elements arbitarily, easier insertion and removal, less wasted space
+
+    b) ArrayList
+    Can access any element, uses more memory and is less flexible
+
+        b1) circular buffer
+        Uses all of it's capacity before expanding, useful in a situation where things are
+        frequently deleted or where memory is scarce. It also allows for easy insertion
+        at the front.
+
+    c) Stack
+    Can only add things to the top and take them from there, only one element can be accessed at any time
+    Can be implemented with any list
+    Used for things such as post-fix calculator, such as RPNCalc
+
+    d) Queue
+    Can only add to the end and take from the start, only one element can be accessed at any time
+    Can be implemented with any list,
+    Used for things such as a line, such as MetroSim
+
+    e) Binary Search Tree
+    Allows for O(log n) search time if balanced, O(n) otherwise, requires maintanence to balance
+    Faster than linear search
+
+
+2) Define invariants:
+
+    a) Describe the invariants of a binary tree
+
+    b) Describe the invariants of a stack
+
+    c) Describe the invariants of a queue
+
+    d) Describe the invariants of a single linked list
+
+    e) Describe the invariants of a double linked list
+
+    f) Describe the invariants of a vector/ArrayList
+
+
+DONE
+3 Question about templates:
+
+    a) Why do we use templates?
+
+    b) Describe how to create an instance of std::vector
+        b1) with type char and name "charVector"
+        vector<char> charVector;
+        b2) with type Pizza "pizzaList"
+        vector<Pizza> pizzaList;
+
+
+DONE
+4) Binary tree.
+
+    a) Insert the following elements into a in order binary tree
+
+        1, 4 , 3 , 7 , 2 , 0 , 9 , 14
+
+        a1) is it balenced? Why or why not?
+        No, because the left of the root will have a height of 1 while the right will have a height of 3
+
+    b) What is the runtime of finding the smallest element?
+    O(n)
+
+    c) What is an inorder traversal? What would the outcome be?
+    In order gets the left node, then the root, then the right node
+    0, 1, 2, 3, 4, 7, 9, 14
+
+    d) What is a post order traversal? What would the outcome be?
+    Post order gets the root after both nodes
+    0, 2, 3, 14, 9, 7, 4, 1
+
+    e) What is a pre order traversal? What would the outcome be?
+    1, 0, 4, 3, 2, 7, 9, 14
+
+    f) Remove the root from the tree.
+       Use any element that satisifies the binary tree's invariants
+
+
+    g) What is an AVL tree? Why would we use it?
+       *If you don't know, search it up online.  Please know this!*
+       AVL means the height of the left node is at most one different than the height of the right node for all nodes on the tree
+
+5) Purpose.
+
+    a) What would a good purpose be for the following classes?
+       (written at top of file)
+        a1) DatumStack
+        a2) MetroSim
+        a3) Passenger
+        a4) CircularBuffer
+    
+DONE
+6) Keywords
+
+    a) define Modularity. Why is it important?
+    Each class only holds things that it needs, all portions of the final program are held in individual
+    modules so that the program is sub-divided. Modularity makes it easier to find and 
+    organize documentation
+    
+    b) define encapsulation. Why is it important?
+    Each class holds private members and functions in order to only give the client the things they need.
+    This keeps clients from accidently accessing things they should not change.
+
+DONE
+7) other
+What does this code do? (assume it compiles)
+Prints out 3
+
+int main() {
+    int *ptr = new int[3];
+    ptr[0] = 3;
+    foo(ptr);
+    std::cout << ptr[0]
+}
+void foo(int *ptr) {
+    ptr = nullptr;
+}

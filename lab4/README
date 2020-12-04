@@ -1,0 +1,57 @@
+/*
+ * Comp 15 Lab 4: Recursion
+ *
+ * README
+ * Name: Sam Lacet-Brown
+ * Date: 10/8/20
+ *
+ */
+
+PROGRAM PURPOSE:
+---------------
+    This lab assignment covers and offers Comp 15 students with hands on
+    practice with recursion. Specifically, this program implements a recursive
+    DFS to complete a maze.
+
+ACKNOWLEDGEMENTS:
+----------------
+    I used information from the lecture slides and talked
+    to my breakout group during lab.
+
+FILES:
+-----
+    Makefile: Used to compile the code and provide the assignment.
+
+    README: this file
+
+    main.cpp: Driver file which uses the functions to solve a maze.
+
+    maze.cpp: Holds the maze state and the solving/counting functions.
+
+    maze.h: Interface for the maze class.
+
+    position.h: Holds a struct that allows us to check maze positions.
+
+
+HOW TO COMPILE/LINK/RUN:
+-----------------------
+    * Compile with "make mazeSolver"
+    * Run with "./mazeSolver"
+
+
+DATA STRUCTURES:
+---------------
+
+    There is no primary data structure in this assignment, though
+    it uses an array to hold the maze. More fundamental to this is
+    recursion and the Depth-First Search algorithm.
+
+TESTING:
+-------
+    Within this lab, I used the included driver program to test my code
+    and found it to be functional in creating a path. I initally had issues
+    with it backtracking randomly, but then I stopped using the inBounds
+    function and simply relied on the edges all being marked with an X, which
+    fixed the bug. Once the maze was consistently being solved, I implemented
+    a dot counting function using if statments and then worked to rewrite it
+    as a recursive call.

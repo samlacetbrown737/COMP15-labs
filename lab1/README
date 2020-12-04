@@ -1,0 +1,23 @@
+Sam Lacet-Brown
+Sept 15th, 2020
+Lab 1
+Comp 15
+To complie: "make shop"
+To run: "./shop bbq.txt"
+Acknowledgments: The wonderful TAs in the 4:30-5:45 lab, and my friend Tyler for listening to me complain
+Purpose: To maintain two lists, one of food that must still be bought and one of food which has already been bought.
+Files submitted:
+- bbq.txt: a list of foods needed for a BBQ, test input file
+- README: this file
+- Makefile
+- main.cpp: Driver file which creates ArrayLists and uses their functioons
+- ArrayList.cpp: Holds each ArrayList function
+- ArrayList.h: defines ArrayList class and the scope of each function
+Testing:
+Checked the bbq.txt file before any editing, after adding new functions I would be
+adding to the header file, after adding the expand/shrink functions, but before the resize 
+one and after the resize function was completed.
+Structures:
+ArrayList/Vector, a dynamic array which allows for adding and removing items even after an
+array is originally declared by copying the contents into a placeholder which is then
+copied back into the same memory location but with more space allocated.
